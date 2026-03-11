@@ -359,15 +359,10 @@ button:hover {
 }
 
 .hero-gallery {
-  grid-template-columns: minmax(300px, 360px) minmax(220px, 260px);
-  align-items: end;
-  justify-content: end;
-  justify-items: end;
-}
-
-.shot-stack {
-  padding-bottom: 24px;
-  justify-items: end;
+  grid-template-columns: minmax(320px, 420px);
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .shot-frame,
@@ -528,11 +523,6 @@ input[type="email"]:focus {
   .hero-gallery {
     grid-template-columns: 1fr;
   }
-
-  .shot-stack {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding-bottom: 0;
-  }
 }
 
 @media (max-width: 820px) {
@@ -563,7 +553,6 @@ input[type="email"]:focus {
     padding-top: 4px;
   }
 
-  .shot-stack,
   .gallery-visuals {
     grid-template-columns: 1fr;
   }
