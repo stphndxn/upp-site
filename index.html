@@ -3,171 +3,362 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Upp | Join the waitlist</title>
+    <title>Upp | A quiet space to check in with yourself</title>
     <meta
       name="description"
-      content="Upp helps people move faster with a cleaner, sharper workflow. Join the waitlist for early access."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
-      rel="stylesheet"
+      content="Upp is a calm iPhone app for morning and evening reflection, feeling tracking, journal history, and weekly insights."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="#top" aria-label="Upp home">
           <span class="brand-mark">U</span>
-          <span class="brand-text">Upp</span>
+          <span class="brand-copy">
+            <strong>Upp</strong>
+            <span>Mindful iPhone reflection</span>
+          </span>
         </a>
-        <a class="header-link" href="#waitlist">Join waitlist</a>
+
+        <nav class="header-nav" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#journal">Journal</a>
+          <a href="#insights">Insights</a>
+          <a class="header-cta" href="#waitlist">Join waitlist</a>
+        </nav>
       </header>
 
       <main id="top">
-        <section class="hero section-grid">
+        <section class="hero">
           <div class="hero-copy stack-lg">
-            <span class="eyebrow">Early access now open</span>
+            <span class="eyebrow">Coming soon on iPhone</span>
             <div class="stack-md">
-              <h1>Work faster. Stay clear. Keep everything moving upward.</h1>
+              <h1>A quiet space to check in with yourself.</h1>
               <p class="hero-text">
-                Upp is a modern product experience built to help people cut
-                through clutter, stay aligned, and move from idea to action
-                without friction.
+                Upp is a calm daily mindfulness journal built around gentle
+                morning and evening reflection. Notice how your days begin, end,
+                and evolve through simple check-ins, thoughtful reminders, and
+                weekly insights that help emotional patterns come into focus.
               </p>
             </div>
 
-            <form
-              id="waitlist"
-              class="waitlist-form"
-              name="upp-waitlist"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              action="/success.html"
-            >
-              <input type="hidden" name="form-name" value="upp-waitlist" />
-              <p class="hidden-field">
-                <label>
-                  Don’t fill this out if you’re human:
-                  <input name="bot-field" />
-                </label>
-              </p>
-              <label class="sr-only" for="email">Email address</label>
-              <div class="form-row">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Enter your email"
-                  autocomplete="email"
-                  required
-                />
-                <button type="submit">Join the waitlist</button>
-              </div>
-              <p class="form-note">
-                Netlify form handling is already wired in. Replace the copy any
-                time before launch.
-              </p>
-            </form>
+            <div class="hero-actions">
+              <a class="primary-button" href="#waitlist">Join the waitlist</a>
+              <a class="secondary-button" href="#features">Explore the product</a>
+            </div>
 
-            <div class="trust-row">
-              <span>Built for clarity</span>
-              <span>Fast onboarding</span>
-              <span>Designed for momentum</span>
+            <div class="hero-points">
+              <span>Morning and evening check-ins</span>
+              <span>Calendar-based journal history</span>
+              <span>Weekly reflective insights</span>
             </div>
           </div>
 
-          <div class="hero-visual">
-            <div class="image-placeholder image-large">
-              <span>Hero product image placeholder</span>
+          <div class="hero-preview">
+            <div class="phone phone-light">
+              <div class="phone-header">
+                <span>Morning check-in</span>
+                <span>7:30</span>
+              </div>
+              <div class="mood-scale">
+                <span class="scale-dot mood-1 active"></span>
+                <span class="scale-dot mood-2"></span>
+                <span class="scale-dot mood-3"></span>
+                <span class="scale-dot mood-4"></span>
+                <span class="scale-dot mood-5"></span>
+                <span class="scale-dot mood-6"></span>
+                <span class="scale-dot mood-7"></span>
+              </div>
+              <div class="check-card">
+                <p class="card-label">Today feels</p>
+                <h2>Somewhat Positive</h2>
+                <p>
+                  A little steadier than yesterday. Ready to move gently into the
+                  day.
+                </p>
+              </div>
+              <div class="mini-grid">
+                <div class="mini-card">
+                  <p class="card-label">Gratitude</p>
+                  <strong>Quiet coffee before the day begins</strong>
+                </div>
+                <div class="mini-card">
+                  <p class="card-label">Focus</p>
+                  <strong>Keep the day simple and kind</strong>
+                </div>
+              </div>
+              <div class="capsule-row">
+                <span class="capsule">Morning</span>
+                <span class="capsule capsule-muted">Evening later</span>
+              </div>
             </div>
-            <div class="hero-card">
-              <p class="metric-label">Waitlist momentum</p>
-              <p class="metric-value">01</p>
-              <p class="metric-copy">A clean launch page ready for real assets.</p>
+
+            <div class="phone phone-dark">
+              <div class="phone-header">
+                <span>Weekly reflection</span>
+                <span>This week</span>
+              </div>
+              <div class="insight-hero">
+                <p class="card-label">Your pattern</p>
+                <strong>More grounded by midweek</strong>
+                <p>
+                  Your entries suggest the week started tight, then softened once
+                  your evenings became slower and more intentional.
+                </p>
+              </div>
+              <div class="trend-card">
+                <div class="trend-line">
+                  <span></span>
+                </div>
+                <div class="trend-days">
+                  <span>M</span>
+                  <span>T</span>
+                  <span>W</span>
+                  <span>T</span>
+                  <span>F</span>
+                  <span>S</span>
+                  <span>S</span>
+                </div>
+              </div>
+              <div class="streak-card">
+                <strong>12 day streak</strong>
+                <p>Consistency without pressure.</p>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="features stack-lg">
+        <section class="feeling-band stack-md">
           <div class="section-heading stack-sm">
-            <span class="eyebrow">Top features</span>
-            <h2>Three reasons people will care about Upp immediately.</h2>
+            <span class="eyebrow">Feeling scale</span>
+            <h2>Seven emotional states, designed to feel clear and gentle.</h2>
           </div>
 
-          <div class="feature-grid">
-            <article class="feature-card stack-md">
-              <div class="feature-number">01</div>
-              <div class="stack-sm">
-                <h3>Focused workflow</h3>
-                <p>
-                  Keep the most important actions visible so users can move
-                  through their day with less context switching.
-                </p>
-              </div>
-              <div class="image-placeholder image-small">
-                <span>Feature image placeholder</span>
-              </div>
-            </article>
-
-            <article class="feature-card stack-md">
-              <div class="feature-number">02</div>
-              <div class="stack-sm">
-                <h3>Clean collaboration</h3>
-                <p>
-                  Share progress and next steps in a way that feels structured,
-                  crisp, and easy to understand at a glance.
-                </p>
-              </div>
-              <div class="image-placeholder image-small">
-                <span>Feature image placeholder</span>
-              </div>
-            </article>
-
-            <article class="feature-card stack-md">
-              <div class="feature-number">03</div>
-              <div class="stack-sm">
-                <h3>Launch-ready momentum</h3>
-                <p>
-                  Start with a polished experience that creates confidence early
-                  and gives your audience a clear reason to sign up.
-                </p>
-              </div>
-              <div class="image-placeholder image-small">
-                <span>Feature image placeholder</span>
-              </div>
-            </article>
+          <div class="feeling-grid" aria-label="Emotional scale">
+            <div class="feeling-item mood-1"><strong>Very Negative</strong><span>Honest and visible</span></div>
+            <div class="feeling-item mood-2"><strong>Negative</strong><span>Low, but seen</span></div>
+            <div class="feeling-item mood-3"><strong>Somewhat Negative</strong><span>Off balance</span></div>
+            <div class="feeling-item mood-4"><strong>Neutral</strong><span>Steady ground</span></div>
+            <div class="feeling-item mood-5"><strong>Somewhat Positive</strong><span>Light returning</span></div>
+            <div class="feeling-item mood-6"><strong>Positive</strong><span>Open and warm</span></div>
+            <div class="feeling-item mood-7"><strong>Very Positive</strong><span>Bright and spacious</span></div>
           </div>
         </section>
 
-        <section class="showcase section-grid">
-          <div class="stack-md">
-            <span class="eyebrow">Visual story</span>
-            <h2>Use these blocks to swap in product shots, app previews, or launch visuals.</h2>
+        <section id="features" class="feature-section">
+          <div class="feature-copy stack-md">
+            <span class="eyebrow">Daily rhythm</span>
+            <h2>Build awareness through simple morning and evening reflection.</h2>
             <p>
-              The layout already supports a primary image area and supporting
-              frames so the page can evolve from placeholder content to a full
-              launch narrative.
+              Upp keeps check-ins short and repeatable. Morning entries focus on
+              how you feel, what you appreciate, and what matters today. Evening
+              entries help you reflect on what went well, what felt hard, and
+              what deserves gratitude.
+            </p>
+            <ul class="feature-list">
+              <li>Short prompts that fit into real life</li>
+              <li>Gentle reminders that support routine without guilt</li>
+              <li>Structured reflection instead of overwhelming journaling</li>
+            </ul>
+          </div>
+
+          <div class="feature-surface routine-surface">
+            <div class="surface-card large-card">
+              <div class="surface-top">
+                <span class="card-label">Check-in flow</span>
+                <span class="pill">AM / PM</span>
+              </div>
+              <div class="entry-card entry-positive">
+                <strong>Morning</strong>
+                <p>How do you feel right now?</p>
+              </div>
+              <div class="entry-card entry-neutral">
+                <strong>Evening</strong>
+                <p>What went well? What felt difficult?</p>
+              </div>
+            </div>
+            <div class="surface-card compact-card">
+              <p class="card-label">Reminder</p>
+              <strong>8:00 AM</strong>
+              <span>Take a quiet moment before your day begins.</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="journal" class="feature-section reverse">
+          <div class="feature-surface journal-surface">
+            <div class="surface-card large-card">
+              <div class="surface-top">
+                <span class="card-label">Journal history</span>
+                <span class="pill">March</span>
+              </div>
+              <div class="calendar-strip">
+                <span>10</span>
+                <span class="selected">11</span>
+                <span>12</span>
+                <span>13</span>
+                <span>14</span>
+                <span>15</span>
+                <span>16</span>
+              </div>
+              <div class="journal-card journal-positive">
+                <strong>Wednesday, March 11</strong>
+                <p>Morning check-in logged</p>
+                <span>Grateful for a slower start and one clear priority.</span>
+              </div>
+              <div class="journal-card journal-neutral">
+                <strong>Tuesday, March 10</strong>
+                <p>Morning and evening check-ins logged</p>
+                <span>The day felt full, but the evening reflection softened it.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-copy stack-md">
+            <span class="eyebrow">Calendar history</span>
+            <h2>Notice how your days begin, end, and evolve.</h2>
+            <p>
+              Browse past entries by day, week, month, or year in a lightweight
+              calendar view that feels native to iPhone. The current day stands
+              out clearly, and each date can quietly show whether you checked in
+              once or twice.
+            </p>
+            <ul class="feature-list">
+              <li>Move back through time without losing the thread</li>
+              <li>See morning and evening entry indicators at a glance</li>
+              <li>Review emotional context without digging through long notes</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="insights" class="feature-section">
+          <div class="feature-copy stack-md">
+            <span class="eyebrow">Weekly insights</span>
+            <h2>See the emotional patterns behind your weeks.</h2>
+            <p>
+              Upp turns your check-ins into gentle reflections about streaks,
+              themes, and shifts in how the week felt. The tone stays human and
+              observational, helping you understand yourself without sounding
+              clinical or mechanical.
+            </p>
+            <ul class="feature-list">
+              <li>Narrative observations shaped by mood and journal history</li>
+              <li>Simple trend views instead of stats-heavy dashboards</li>
+              <li>Streaks that encourage consistency, not pressure</li>
+            </ul>
+          </div>
+
+          <div class="feature-surface insight-surface">
+            <div class="surface-card narrative-card">
+              <p class="card-label">This week</p>
+              <strong>You seemed calmer on days with slower evenings.</strong>
+              <p>
+                Your reflections suggest that quiet routines made it easier to
+                move from tension toward steadiness by the end of the week.
+              </p>
+            </div>
+            <div class="surface-row">
+              <div class="surface-card compact-card">
+                <p class="card-label">Streak</p>
+                <strong>12</strong>
+                <span>days of check-ins</span>
+              </div>
+              <div class="surface-card compact-card">
+                <p class="card-label">Theme</p>
+                <strong>Restored by routine</strong>
+                <span>Subtle structure made the week feel lighter.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-section reverse">
+          <div class="feature-surface support-surface">
+            <div class="surface-card large-card">
+              <div class="surface-top">
+                <span class="card-label">Designed with care</span>
+                <span class="pill">Accessible</span>
+              </div>
+              <div class="setting-row">
+                <span class="setting-icon">FP</span>
+                <div>
+                  <strong>Feeling patterns</strong>
+                  <p>Optional patterns support recognition beyond color alone.</p>
+                </div>
+              </div>
+              <div class="setting-row">
+                <span class="setting-icon">RM</span>
+                <div>
+                  <strong>Gentle reminders</strong>
+                  <p>Morning and evening prompts stay lightweight and respectful.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-copy stack-md">
+            <span class="eyebrow">Reminders and accessibility</span>
+            <h2>Structured, thoughtful, and intentionally simple.</h2>
+            <p>
+              The experience is designed to feel calm in both light and dark
+              mode, with native-feeling controls, soft surfaces, and optional
+              pattern support for emotional states. Every part of the product is
+              built to encourage self-awareness without adding friction.
+            </p>
+            <ul class="feature-list">
+              <li>Apple-native visual rhythm and rounded surfaces</li>
+              <li>Support for feeling patterns as well as hue</li>
+              <li>Clear settings rows and calm, premium interactions</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="waitlist-section">
+          <div class="section-heading stack-sm">
+            <span class="eyebrow">Join the list</span>
+            <h2>Be first to try Upp when early access opens.</h2>
+            <p>
+              Join the waitlist for launch updates and early access to a more
+              thoughtful way of reflecting on your days.
             </p>
           </div>
 
-          <div class="showcase-grid">
-            <div class="image-placeholder image-medium">
-              <span>Main showcase image placeholder</span>
+          <form
+            id="waitlist"
+            class="waitlist-form"
+            name="upp-waitlist"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/success.html"
+          >
+            <input type="hidden" name="form-name" value="upp-waitlist" />
+            <p class="hidden-field">
+              <label>
+                Don’t fill this out if you’re human:
+                <input name="bot-field" />
+              </label>
+            </p>
+            <label class="sr-only" for="email">Email address</label>
+            <div class="form-row">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+              />
+              <button type="submit">Join the waitlist</button>
             </div>
-            <div class="image-placeholder image-medium">
-              <span>Secondary image placeholder</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="cta-banner stack-md">
-          <span class="eyebrow">Ready when you are</span>
-          <h2>Collect signups now, then replace the placeholders with your real product story.</h2>
-          <a class="cta-link" href="#waitlist">Get on the list</a>
+            <p class="form-note">
+              Netlify Forms are configured and ready for deployment.
+            </p>
+          </form>
         </section>
       </main>
     </div>
