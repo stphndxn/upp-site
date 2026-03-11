@@ -62,11 +62,17 @@
           </div>
 
           <div class="hero-gallery">
-            <figure class="shot-frame shot-tall shot-dark">
-              <img
-                src="./assets/journal-history-dark.png"
-                alt="Upp dark mode journal history screen"
-              />
+            <figure class="shot-frame shot-tall hero-shot">
+              <picture>
+                <source
+                  srcset="./assets/journal-history-dark.png"
+                  media="(prefers-color-scheme: dark)"
+                />
+                <img
+                  src="./assets/journal-history-light.png"
+                  alt="Upp journal history screen"
+                />
+              </picture>
             </figure>
           </div>
         </section>
@@ -115,11 +121,10 @@
         <section id="gallery" class="gallery-section stack-lg">
           <div class="section-heading stack-sm">
             <span class="eyebrow">Product gallery</span>
-            <h2>The best version of this page should show the real app.</h2>
+            <h2>A closer look at how Upp feels in use.</h2>
             <p>
-              These frames are set up for actual product screenshots instead of
-              synthetic web mockups. Once the image files are in the repo, the
-              site can switch from placeholder slots to the real product.
+              Short check-ins, calm history views, and reflective insights come
+              through best when the product speaks for itself.
             </p>
           </div>
 

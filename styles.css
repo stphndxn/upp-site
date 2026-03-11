@@ -102,7 +102,7 @@ input {
 .page-shell {
   position: relative;
   z-index: 1;
-  width: min(1200px, calc(100% - 32px));
+  width: min(1240px, calc(100% - 64px));
   margin: 0 auto;
   padding: 24px 0 64px;
 }
@@ -225,7 +225,7 @@ main {
 }
 
 .stack-md {
-  gap: 16px;
+  gap: 20px;
 }
 
 .stack-sm {
@@ -292,6 +292,7 @@ p,
 .hero-copy {
   align-content: start;
   justify-items: start;
+  padding: 16px 0;
 }
 
 .primary-button,
@@ -367,7 +368,6 @@ button:hover {
 
 .shot-frame,
 .overview-card,
-.proof-card,
 .waitlist-form {
   padding: 16px;
   border-radius: 28px;
@@ -387,7 +387,19 @@ button:hover {
   width: 100%;
 }
 
+.shot-frame picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .shot-light {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(242, 244, 248, 0.92)),
+    var(--surface);
+}
+
+.hero-shot {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(242, 244, 248, 0.92)),
     var(--surface);
@@ -398,6 +410,14 @@ button:hover {
     linear-gradient(180deg, rgba(17, 18, 24, 0.96), rgba(8, 9, 14, 0.96)),
     #0d0e11;
   color: #f7f8ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero-shot {
+    background:
+      linear-gradient(180deg, rgba(17, 18, 24, 0.96), rgba(8, 9, 14, 0.96)),
+      #0d0e11;
+  }
 }
 
 .shot-tall {
@@ -415,11 +435,14 @@ button:hover {
 
 .overview-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .overview-card {
-  gap: 16px;
-  padding: 24px;
+  gap: 20px;
+  padding: 32px;
+  align-content: start;
+  min-height: 100%;
 }
 
 .feeling-scale {
@@ -444,16 +467,19 @@ button:hover {
 
 .gallery-section {
   gap: 32px;
+  padding-inline: 32px;
 }
 
 .gallery-row {
   gap: 48px;
+  padding-block: 8px;
 }
 
 .gallery-copy {
   display: grid;
-  gap: 16px;
+  gap: 20px;
   align-content: start;
+  padding-inline: 8px;
 }
 
 .gallery-visuals {
@@ -468,10 +494,13 @@ button:hover {
 
 .section-heading {
   max-width: 720px;
+  gap: 20px;
+  padding-inline: 32px;
 }
 
 .waitlist-section {
   gap: 32px;
+  padding-inline: 32px;
 }
 
 .waitlist-form {
@@ -564,7 +593,7 @@ input[type="email"]:focus {
 
 @media (max-width: 640px) {
   .page-shell {
-    width: min(100% - 24px, 1200px);
+    width: min(100% - 32px, 1240px);
     padding-top: 16px;
   }
 
@@ -586,9 +615,14 @@ input[type="email"]:focus {
     min-height: 520px;
   }
 
-  .proof-card,
   .overview-card,
   .waitlist-form {
     padding: 24px;
+  }
+
+  .gallery-section,
+  .waitlist-section,
+  .section-heading {
+    padding-inline: 0;
   }
 }
