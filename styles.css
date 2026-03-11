@@ -521,6 +521,10 @@ button:hover {
   backdrop-filter: blur(24px);
 }
 
+.waitlist-success[hidden] {
+  display: none !important;
+}
+
 input[type="email"] {
   flex: 1;
   min-height: 56px;
