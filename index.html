@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upp | Join the waitlist</title>
+    <meta
+      name="description"
+      content="Upp helps people move faster with a cleaner, sharper workflow. Join the waitlist for early access."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Upp home">
+          <span class="brand-mark">U</span>
+          <span class="brand-text">Upp</span>
+        </a>
+        <a class="header-link" href="#waitlist">Join waitlist</a>
+      </header>
+
+      <main id="top">
+        <section class="hero section-grid">
+          <div class="hero-copy stack-lg">
+            <span class="eyebrow">Early access now open</span>
+            <div class="stack-md">
+              <h1>Work faster. Stay clear. Keep everything moving upward.</h1>
+              <p class="hero-text">
+                Upp is a modern product experience built to help people cut
+                through clutter, stay aligned, and move from idea to action
+                without friction.
+              </p>
+            </div>
+
+            <form
+              id="waitlist"
+              class="waitlist-form"
+              name="upp-waitlist"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              action="/success.html"
+            >
+              <input type="hidden" name="form-name" value="upp-waitlist" />
+              <p class="hidden-field">
+                <label>
+                  Don’t fill this out if you’re human:
+                  <input name="bot-field" />
+                </label>
+              </p>
+              <label class="sr-only" for="email">Email address</label>
+              <div class="form-row">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  autocomplete="email"
+                  required
+                />
+                <button type="submit">Join the waitlist</button>
+              </div>
+              <p class="form-note">
+                Netlify form handling is already wired in. Replace the copy any
+                time before launch.
+              </p>
+            </form>
+
+            <div class="trust-row">
+              <span>Built for clarity</span>
+              <span>Fast onboarding</span>
+              <span>Designed for momentum</span>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="image-placeholder image-large">
+              <span>Hero product image placeholder</span>
+            </div>
+            <div class="hero-card">
+              <p class="metric-label">Waitlist momentum</p>
+              <p class="metric-value">01</p>
+              <p class="metric-copy">A clean launch page ready for real assets.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="features stack-lg">
+          <div class="section-heading stack-sm">
+            <span class="eyebrow">Top features</span>
+            <h2>Three reasons people will care about Upp immediately.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card stack-md">
+              <div class="feature-number">01</div>
+              <div class="stack-sm">
+                <h3>Focused workflow</h3>
+                <p>
+                  Keep the most important actions visible so users can move
+                  through their day with less context switching.
+                </p>
+              </div>
+              <div class="image-placeholder image-small">
+                <span>Feature image placeholder</span>
+              </div>
+            </article>
+
+            <article class="feature-card stack-md">
+              <div class="feature-number">02</div>
+              <div class="stack-sm">
+                <h3>Clean collaboration</h3>
+                <p>
+                  Share progress and next steps in a way that feels structured,
+                  crisp, and easy to understand at a glance.
+                </p>
+              </div>
+              <div class="image-placeholder image-small">
+                <span>Feature image placeholder</span>
+              </div>
+            </article>
+
+            <article class="feature-card stack-md">
+              <div class="feature-number">03</div>
+              <div class="stack-sm">
+                <h3>Launch-ready momentum</h3>
+                <p>
+                  Start with a polished experience that creates confidence early
+                  and gives your audience a clear reason to sign up.
+                </p>
+              </div>
+              <div class="image-placeholder image-small">
+                <span>Feature image placeholder</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="showcase section-grid">
+          <div class="stack-md">
+            <span class="eyebrow">Visual story</span>
+            <h2>Use these blocks to swap in product shots, app previews, or launch visuals.</h2>
+            <p>
+              The layout already supports a primary image area and supporting
+              frames so the page can evolve from placeholder content to a full
+              launch narrative.
+            </p>
+          </div>
+
+          <div class="showcase-grid">
+            <div class="image-placeholder image-medium">
+              <span>Main showcase image placeholder</span>
+            </div>
+            <div class="image-placeholder image-medium">
+              <span>Secondary image placeholder</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-banner stack-md">
+          <span class="eyebrow">Ready when you are</span>
+          <h2>Collect signups now, then replace the placeholders with your real product story.</h2>
+          <a class="cta-link" href="#waitlist">Get on the list</a>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
