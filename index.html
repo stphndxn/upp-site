@@ -236,12 +236,13 @@
           </div>
 
           <form
+            id="waitlist-form"
             class="waitlist-form"
             name="upp-waitlist"
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
-            action="/success.html"
+            action="/"
           >
             <input type="hidden" name="form-name" value="upp-waitlist" />
             <p class="hidden-field">
@@ -263,6 +264,12 @@
               <button type="submit">Join the waitlist</button>
             </div>
           </form>
+
+          <div id="waitlist-success" class="waitlist-success" hidden>
+            <span class="eyebrow">You’re on the list</span>
+            <h3>Thanks for joining Upp.</h3>
+            <p>We’ve received your email and will let you know when early access opens.</p>
+          </div>
         </section>
       </main>
     </div>

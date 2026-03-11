@@ -509,6 +509,18 @@ button:hover {
   max-width: 760px;
 }
 
+.waitlist-success {
+  display: grid;
+  gap: 16px;
+  max-width: 760px;
+  padding: 32px;
+  border-radius: 28px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(24px);
+}
+
 input[type="email"] {
   flex: 1;
   min-height: 56px;
