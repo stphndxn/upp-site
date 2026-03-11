@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8C5AB" />
+      <stop offset="100%" stop-color="#C4D5EF" />
+    </linearGradient>
+    <filter id="blurShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" />
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="18" fill="url(#bg)" />
+  <path d="M32 18 L42 35 H22 Z" fill="#1E2D57" />
+  <ellipse cx="32" cy="42" rx="10" ry="3.2" fill="#1E2D57" opacity="0.22" filter="url(#blurShadow)" />
+</svg>
